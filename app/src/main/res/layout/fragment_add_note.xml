@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".views.AddNoteFragment">
+
+    <TextView
+        android:id="@+id/updateeditNoteHeading"
+        android:layout_width="131dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:text="ADD NOTE"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/saveBttton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="SUBMIT"
+        android:backgroundTint="#14B1EF"
+        app:layout_constraintEnd_toEndOf="@+id/contenteditText"
+        app:layout_constraintStart_toStartOf="@+id/contenteditText"
+        app:layout_constraintTop_toBottomOf="@+id/contenteditText" />
+
+    <EditText
+        android:id="@+id/tittleeditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/constraint_shap"
+        android:ems="10"
+        android:hint="Enter Your tittle"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateeditNoteHeading" />
+
+    <EditText
+        android:id="@+id/contenteditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/constraint_shap"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Enter Discription"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tittleeditText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tittleeditText"
+        app:layout_constraintTop_toBottomOf="@+id/tittleeditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
